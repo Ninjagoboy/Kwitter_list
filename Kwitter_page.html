@@ -16,7 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="Kwitter.css">
 
-<script src="Kwitter_room.js"></script>
+<script src="Kwitter_page.js"></script>
 </head>
 
 <body>
@@ -33,13 +33,12 @@
         </center>
     </div>
     <center>
-            <div class="input_div_nsg_page">
-                <label>Send</label>
-                <input type="text" placeholder="new room name" class="form-control" id="newroominput"     >
+            <div class="input_div_message_page"> <label>Send:</label> 
+                <input type="text" id="msg" class="form-control" 
+                placeholder="Message"> 
+                <button onclick="send()" 
+                class="btn btn-success">Send</button> 
             </div>
-            <button onclick="Addroom()" class=" btn btn-success">#Add room</button>
-            <h3 class="color_white">#TRENDING ROOMS</h3>
-            <div id="output"></div>
         </center>
     
 </body>
